@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+h1 a{
+    color:lightgray;
+    text-decoration:none;
+}
+
 body {
     background:#454545;
 }
@@ -13,6 +18,20 @@ body {
 #wrapper {
     max-width:1200px;
     margin:20px auto;
+}
+
+#screenshots {
+    clear:both;
+    padding-top: 25px;
+}
+
+#screenshots img {
+    max-width:575px;
+}
+
+#mamp {
+    float:left;
+    padding-right: 50px;
 }
 
 nav {
@@ -103,6 +122,10 @@ h2 {
     margin-bottom:20px;
 }
 
+h3 {
+    color:yellow;
+}
+
 main h2, aside h2 {
     text-align:left;
 }
@@ -117,4 +140,11 @@ aside h3 {
 
 aside li a {
     color:white;
+    text-decoration:none;
+    
 }
+
+aside li a:hover {
+    text-decoration:underline;
+}
+
