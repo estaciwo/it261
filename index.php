@@ -12,7 +12,7 @@
     <div id="wrapper">
         <nav>
             <ul>
-                <li><a href="">Switch</a></li>
+                <li><a href="website/daily.php">Switch</a></li>
                 <li><a href="">Troubleshoot</a></li>
                 <li><a href="">Calculator</a></li>
                 <li><a href="">Email</a></li>
@@ -37,6 +37,15 @@
                 <li><a href="weeks/week2/currency-logic.php">currency-logic.php</a></li>
                 <li><a href="weeks/week2/currency.php">currency.php</a></li>
                 <li><a href="weeks/week2/heredoc.php">heredoc.php</a></li>
+            </ol>
+            <h3>Week 3</h3>
+            <ol>
+                <li><a href="weeks/week3/if.php">if.php</a></li>
+                <li><a href="weeks/week3/date.php">date.php</a></li>
+                <li><a href="weeks/week3/for-each.php">for-each.php</a></li>
+                <li><a href="weeks/week3/for-loop.php">for-loop.php</a></li>
+                <li><a href="weeks/week3/switch.php">switch.php</a></li>
+                <li><a href="weeks/week3/index.php">index.php</a></li>
             </ol>
         </aside>
         <div id="screenshots">
