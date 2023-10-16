@@ -59,66 +59,73 @@ if(isset($_GET['today'])) {
 
 switch($today) {
     case 'Sunday' : 
-        $weekday = '<h2>Software Sunday!</h2>';
-        $name = '<h3>Serum software synthesizer</h3>';
+        $weekday = 'Software Sunday!';
+        $dayAside = 'Sunday';
+        $name = 'Serum software synthesizer';
         $pic = 'serum.jpg';
         $alt = 'Serum Software Synthesizer';
         $border = 'turquoise';
-        $content = '<p>A <b>software synthesizer</b> or softsynth is a computer program that generates digital audio, usually for music.</p>';
+        $content = 'A <b>software synthesizer</b> or softsynth is a computer program that generates digital audio, usually for music.';
         break;
 
     case 'Monday' : 
-        $weekday = '<h2>Moog Monday!</h2>';
-        $name = '<h3>Robert Moog</h3>';
+        $weekday = 'Moog Monday!';
+        $dayAside = 'Monday';
+        $name = 'Robert Moog';
         $pic = 'moog.jpg';
         $alt = 'Robert Moog';
         $border = 'pink';
-        $content = '<p><b>Robert Arthur Moog</b> was an American engineer and electronic music pioneer. He was the founder of the synthesizer manufacturer Moog Music and the inventor of the first commercial synthesizer, the Moog synthesizer, which debuted in 1964.</p>';
+        $content = '<b>Robert Arthur Moog</b> was an American engineer and electronic music pioneer. He was the founder of the synthesizer manufacturer Moog Music and the inventor of the first commercial synthesizer, the Moog synthesizer, which debuted in 1964.';
         break;
 
     case 'Tuesday' : 
-        $weekday = '<h2>Techno Tuesday!</h2>';
-        $name = '<h3>The Belleville Three</h3>';
+        $weekday = 'Techno Tuesday!';
+        $dayAside = 'Tuesday';
+        $name = 'The Belleville Three';
         $pic = 'belleville.jpg';
         $alt = 'The Belleville Three';
         $border = 'lightblue';
-        $content = '<p><b>The Belleville Three</b> are three American musicians, Juan Atkins, Derrick May, and Kevin Saunderson, who are credited with inventing the Detroit Techno genre in Belleville, MI.</p>';
+        $content = '<b>The Belleville Three</b> are three American musicians, Juan Atkins, Derrick May, and Kevin Saunderson, who are credited with inventing the Detroit Techno genre in Belleville, MI.';
         break;
 
     case 'Wednesday' : 
-        $weekday = '<h2>Wendy Wednesday!</h2>';
-        $name = '<h3>Wendy Carlos</h3>';
+        $weekday = 'Wendy Wednesday!';
+        $dayAside = 'Wednesday';
+        $name = 'Wendy Carlos';
         $pic = 'wendy.jpg';
         $alt = 'Wendy Carlos';
         $border = 'orange';
-        $content = '<p><b>Wendy Carlos</b> is an American musician and composer best known for her electronic music and film scores.</p>';
+        $content = '<b>Wendy Carlos</b> is an American musician and composer best known for her electronic music and film scores.';
         break;
             
     case 'Thursday' : 
-        $weekday = '<h2>Thaddeus Thursday!</h2>';
-        $name = '<h3>Thaddeus Cahill</h3>';
+        $weekday = 'Thaddeus Thursday!';
+        $dayAside = 'Thursday';
+        $name = 'Thaddeus Cahill';
         $pic = 'thaddeus.jpg';
         $alt = 'Thaddeus Cahill';
         $border = 'yellow';
-        $content = '<p>In 1895 <b>Thaddeus Cahill</b> submitted his first patent for the Telharmonium, “The Art of and Apparatus for Generating and Distributing Music Electrically.” The Telharmonium can be considered the first significant electronic musical instrument and was a method of electro-magnetically synthesising and distributing music over the new telephone networks of Victorian America.</p>';
+        $content = 'In 1895 <b>Thaddeus Cahill</b> submitted his first patent for the Telharmonium, “The Art of and Apparatus for Generating and Distributing Music Electrically.” The Telharmonium can be considered the first significant electronic musical instrument and was a method of electro-magnetically synthesising and distributing music over the new telephone networks of Victorian America.';
         break;
 
     case 'Friday' : 
-        $weekday = '<h2>FM Friday!</h2>';
-        $name = '<h3>FM synthesis algorithms</h3>';
+        $weekday = 'FM Friday!';
+        $dayAside = 'Friday';
+        $name = 'FM synthesis';
         $pic = 'algorithms.jpg';
         $alt = 'FM synthesis algorithms';
         $border = 'red';
-        $content = '<p><b>F</b>requency <b>M</b>odulation synthesis is a form of sound synthesis whereby the frequency of a waveform is changed by modulating its frequency with a modulator. The frequency of an oscillator is altered in accordance with the amplitude of a modulating signal. FM synthesis can create both harmonic and inharmonic sounds.</p>';
+        $content = '<b>F</b>requency <b>M</b>odulation synthesis is a form of sound synthesis whereby the frequency of a waveform is changed by modulating its frequency with a modulator. The frequency of an oscillator is altered in accordance with the amplitude of a modulating signal. FM synthesis can create both harmonic and inharmonic sounds.';
         break;
 
     case 'Saturday' : 
-        $weekday = '<h2>Suzanne Saturday!</h2>';
-        $name = '<h3>Suzanne Ciani</h3>';
+        $weekday = 'Suzanne Saturday!';
+        $dayAside = 'Saturday';
+        $name = 'Suzanne Ciani';
         $pic = 'ciani.jpg';
         $alt = 'Suzanne Ciani';
         $border = 'purple';
-        $content = '<p><b>Suzanne Ciani</b> is an American musician, sound designer, composer, and record label executive who found early success in the 1970s with her electronic music and sound effects for films and television commercials.</p>';
+        $content = '<b>Suzanne Ciani</b> is an American musician, sound designer, composer, and record label executive who found early success in the 1970s with her electronic music and sound effects for films and television commercials.';
         break;
 }
 
