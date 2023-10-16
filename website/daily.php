@@ -4,10 +4,8 @@ include('./includes/header.php')
 
 <main style="background:<?php echo $main; ?>; margin:<?php echo $mainMargin; ?>; border: 10px solid <?php echo $border; ?>; padding: <?php echo $dailypad; ?>">
 <h1><i>DAILY SYNTHESIZER HISTORY</i></h1>
-<?php
-    echo $weekday;
-?>
-    <?php echo $content; ?>
+<h2><?php echo $weekday; ?></h2>
+<p><?php echo $content; ?></p>
     <h2>Want to learn more about electronic music?</h2>
         <ul style="list-style-type:none;">
             <li><a href="daily.php?today=Sunday">Sunday</a></li>
@@ -21,11 +19,8 @@ include('./includes/header.php')
 </main>
 
 <aside style="background:<?php echo $main; ?>; margin:<?php echo $mainMargin; ?>; border: 10px solid <?php echo $border; ?>; padding: <?php echo $dailypad; ?>">
-<h3>
-    <?php
-    echo $name;
-    ?>
-</h3>
+<h2><?php echo $dayAside; ?></h2>
+<h3><?php echo $name; ?></h3>
 <img src="images/<?php echo $pic ;?>" alt="<?php echo $alt ;?>">
 
 </aside>
