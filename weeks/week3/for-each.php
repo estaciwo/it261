@@ -21,17 +21,20 @@ echo '</ul>';
 echo '<h2>Movies and Shows list which will have both a key and a value</h2>';
 
 $shows = [
-    'Apple TV' => 'Severance',
-    'Apple TV' => 'For All Mankind',
-    'Showtime' => 'City on a Hill',
-    'Showtime' => 'Homeland',
-    'Movie' => 'Top Gun Maverick',
-    'HBO MAX' => 'Hacks'
+    array('Apple TV' => 'Severance'),
+    array('Apple TV' => 'For All Mankind'),
+    array('Showtime' => 'City on a Hill'),
+    array('Showtime' => 'Homeland'),
+    array('Movie' => 'Top Gun Maverick'),
+    array('HBO MAX' => 'Hacks')
 ];
 
 echo '<ul>';
-foreach($shows as $key => $value) {
-    echo '<li> <b>'.$key.'</b>; '.$value.' </li>';
+foreach($shows as $show) {
+    foreach($show as $key => $value) {
+        echo '<li> <b>'.$key.'</b>: '.$value.' </li>';
+    }
+    
 }
 echo '</ul>';
 
