@@ -20,7 +20,8 @@
 
     form {
         border:1px solid red;
-        margin:0 225px;
+        margin:auto;
+        width:350px;
         padding:10px;
     }
 </style>
