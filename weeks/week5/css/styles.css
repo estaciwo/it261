@@ -58,3 +58,17 @@ form ul {
     font-style:italic;
     text-align:center;
 }
+
+.happy {
+    width:600px;
+    border:5px solid yellow;
+    margin:auto;
+    text-align:center;
+}
+
+.sad {
+    width:600px;
+    border:5px solid blue;
+    margin:auto;
+    text-align:center;
+}
