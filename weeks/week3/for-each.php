@@ -34,7 +34,6 @@ foreach($shows as $show) {
     foreach($show as $key => $value) {
         echo '<li> <b>'.$key.'</b>: '.$value.' </li>';
     }
-    
 }
 echo '</ul>';
 

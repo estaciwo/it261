@@ -13,8 +13,8 @@
         <nav>
             <ul>
                 <li><a href="website/daily.php">Switch</a></li>
-                <li><a href="">Troubleshoot</a></li>
-                <li><a href="">Calculator</a></li>
+                <li><a href="website/adder.php">Troubleshoot</a></li>
+                <li><a href="website/calculator.php">Calculator</a></li>
                 <li><a href="">Email</a></li>
                 <li><a href="">Database</a></li>
                 <li><a href="">Gallery</a></li>
@@ -56,6 +56,12 @@
                 <li><a href="weeks/week4/arithmetic-form.php">arithmetic-form.php</a></li>
                 <li><a href="weeks/week4/celsius.php">celsius.php</a></li>
                 <li><a href="weeks/week4/adder.php">adder.php</a></li>
+            </ol>
+            <h3>Week 5</h3>
+            <ol>
+                <li><a href="weeks/week5/currency1.php">currency1.php</a></li>
+                <li><a href="weeks/week5/currency2.php">currency2.php</a></li>
+                <li><a href="weeks/week5/currency3.php">currency3.php</a></li>
             </ol>
         </aside>
         <div id="screenshots">
