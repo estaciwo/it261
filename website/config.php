@@ -39,6 +39,11 @@ switch(THIS_PAGE) {
         $title = 'Gallery page of our Website Project';
         $body = 'gallery inner';
         break;
+
+    case 'thx.php' : 
+    $title = 'Thank You! | Seattle Utilities';
+    $body = 'thx';
+    break;
 }
 
 // our navigational array!

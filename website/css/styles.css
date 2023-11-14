@@ -64,10 +64,51 @@ main {
     float:left;
 }
 
+main.junk {
+    background: white;
+    border: 5px solid green;
+    color: green;
+    padding: 5px;
+}
+
+form {
+    background:#efefef;
+    padding: 20px;
+}
+
+fieldset {
+    padding: 20px;
+}
+
+label {
+    line-height: 30px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.error {
+    color:red;
+    font-style:italic;
+}
+
 aside {
     width:35%;
     background:lightsalmon;
     float:right;
+    padding: 10px;
+}
+
+aside img {
+    min-width: 350px;
+}
+
+aside.junk {
+    background-color: white;
+    border: 5px solid green;
+    padding: 5px;
+    text-align: center;
 }
 
 footer {
@@ -107,6 +148,10 @@ h1 {
     font-size:2.5em;
 }
 
+h1.junk {
+    color: black;
+}
+
 h2 {
     font-size:2em;
 }
@@ -118,4 +163,8 @@ h3 {
 h1, h2, h3 {
     margin-bottom:10px;
     font-family:playfair or serif;
+}
+
+legend {
+    color:black;
 }
