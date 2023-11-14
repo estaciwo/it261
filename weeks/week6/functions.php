@@ -98,4 +98,4 @@ echo $my_cars;
 
 echo '<h2>The logic behind the wines on our form</h2>
 <p>If post wines is not empty, take post wines and implode them, and create a new variable named $my_wines</p>
-'
+';
