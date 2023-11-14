@@ -63,6 +63,19 @@
                 <li><a href="weeks/week5/currency2.php">currency2.php</a></li>
                 <li><a href="weeks/week5/currency3.php">currency3.php</a></li>
             </ol>
+             <h3>Week 6</h3>
+            <ol>
+                <li><a href="weeks/week6/form.php">form.php</a></li>
+                <li><a href="weeks/week6/form2.php">form2.php</a></li>
+                <li><a href="weeks/week6/functions.php">functions.php</a></li>
+            </ol>
+             <h3>Week 7</h3>
+            <ol>
+                <li><a href="weeks/week7/form3.php">form3.php</a></li>
+                <li><a href="weeks/week7/pictures.php">pictures.php</a></li>
+                <li><a href="weeks/week7/rand.php">rand.php</a></li>
+                <li><a href="weeks/week7/strings.php">strings.php</a></li>
+            </ol>
         </aside>
         <div id="screenshots">
             <div id="mamp"><h3>Screenshot 1: MAMP Installed</h3>
