@@ -4,6 +4,13 @@ ob_start(); // removes header errors until all PHP is processed?
 
 define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
 
+    $food['Huevos_Rancheros'] = 'huev Rural Mexico';
+    $food['Linguini_Marinara'] = 'ling Southern Italy';
+    $food['Dim_Sum'] = 'dims Guangdong, China';
+    $food['Tandoori_Chicken'] = 'tand Punjab, India';
+    $food['Panang_Curry'] = 'pana Central Thailand';
+    $food['Enkulal_Firfir'] = 'enku Ethiopia';
+
 switch(THIS_PAGE) {
     case 'index.php' : 
         $title = 'Home page of our Website Project';
@@ -41,9 +48,13 @@ switch(THIS_PAGE) {
         break;
 
     case 'thx.php' : 
-    $title = 'Thank You! | Seattle Utilities';
-    $body = 'thx';
-    break;
+        $title = 'Thank You! | Seattle Utilities';
+        $body = 'thx';
+        break;
+
+    case 'gallery.php' :
+        $body = 'food';
+        break;
 }
 
 // our navigational array!
