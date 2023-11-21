@@ -1,92 +1,114 @@
-/* Styles for my portal page */
+/* styles for my website */
 
 * {
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
-}
-
-h1 a{
-    color:lightgray;
-    text-decoration:none;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body {
-    background:#454545;
+    background:beige;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.current {
+    color: red;
+}
+
+header {
+    background:yellow;
+    padding:20px 0;
+}
+
+.inner-header {
+    max-width:1200px;
+    margin:0px auto;
+    overflow:hidden;
+}
+
+#logo {
+    width:200px;
+    float:left;
+}
+
+nav ul {
+    float:right;
+    margin-top:30px;
+    list-style-type:none;
+}
+
+nav li {
+    float:left;
+    margin-left:30px;
+}
+
+nav a {
+    text-decoration:none;
 }
 
 #wrapper {
     max-width:1200px;
     margin:20px auto;
-}
-
-#screenshots {
     clear:both;
-    padding-top: 25px;
+    overflow:hidden;
 }
 
-#screenshots img {
-    max-width:575px;
-}
-
-#mamp {
-    float:left;
-    padding-right: 50px;
-}
-
-nav {
-    height:60px;
-    background:#c291ff;
-    line-height:60px;
+#hero {
+    background:red;
     margin-bottom:20px;
-}
-
-nav li {
-    float:left;
-    width:16.66%;
-    text-align:center;
-    list-style-type:none;
-}
-
-nav a {
-    color:white;
-    text-decoration:none;
 }
 
 main {
     width:62%;
+    background:lightblue;
     float:left;
+}
+
+main.junk {
+    background: white;
+    border: 5px solid green;
+    color: green;
+    padding: 5px;
+}
+
+form {
+    background:#efefef;
+    padding: 20px;
+}
+
+fieldset {
+    padding: 20px;
+}
+
+label {
+    line-height: 30px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.error {
+    color:red;
+    font-style:italic;
 }
 
 aside {
     width:35%;
+    background:lightsalmon;
     float:right;
+    padding: 10px;
 }
 
-.right {
-    float:right;
-    max-width:350px;
-    margin-left:30px;
+aside img {
+    min-width: 350px;
 }
 
-main h2 {
-    text-align: left;
-}
-
-main p {
-    color:white;
-}
-
-.full {
-    max-width:1200px;
-    margin-top:20px;
-}
-
-footer {
-    background:lightgray;
-    max-width:1200px;
-    clear:both;
-    margin:auto;
+aside.junk {
+    background-color: white;
+    border: 5px solid green;
+    padding: 5px;
+    text-align: center;
 }
 
 footer {
@@ -107,43 +129,76 @@ footer li {
     margin:0 15px;
 }
 
+img {
+    max-width:100%;
+}
+
+aside img {
+    max-width: 250px;
+}
+
 /* typography */
 
+p {
+    margin-bottom:20px;
+    line-height:1.4;
+}
+
 h1 {
+    font-size:2.5em;
+}
+
+h1.junk {
+    color: black;
+}
+
+h1.food {
+    margin: auto;
+    color: red;
     text-align: center;
-    font-size: 3em;
-    margin: 20px 0;
+    font-family: sans-serif;
+    padding: 20px;
+    margin: 20px;
 }
 
 h2 {
-    color:turquoise;
     font-size:2em;
-    text-align:center;
-    margin-bottom:20px;
 }
 
 h3 {
-    color:yellow;
+    font-size:1.5em;
 }
 
-main h2, aside h2 {
-    text-align:left;
+h1, h2, h3 {
+    margin-bottom:10px;
+    font-family:playfair or serif;
 }
 
-aside {
-    color:white;
+body.food {
+    background: #90e087;
 }
 
-aside h3 {
-    color:pink;
+table.food {
+    margin: auto;
+    border: 1px solid red;
+    border-collapse: collapse;
+    margin-bottom: 20px;
 }
 
-aside li a {
-    color:white;
-    text-decoration:none;
-    
+img.food {
+    max-width: 200px;
 }
 
-aside li a:hover {
-    text-decoration:underline;
+th.food {
+    font-style: italic;
+}
+
+th.food, td.food {
+    text-align: center;
+    border: 1px solid red;
+    padding: 10px;
+}
+
+legend {
+    color:black;
 }
