@@ -46,6 +46,10 @@ nav a {
     text-decoration:none;
 }
 
+nav a:hover {
+    font-weight: bold;
+}
+
 #wrapper {
     max-width:1200px;
     margin:20px auto;
