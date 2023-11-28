@@ -29,6 +29,7 @@
         </main>
 
         <aside>
+            <h2><a href="https://github.com/estaciwo/it261">Github</a></h2>
             <h2>Weekly Class Exercises</h2>
             <h3>Week 2</h3>
             <ol>
@@ -83,13 +84,20 @@
             </ol>
         </aside>
         <div id="screenshots">
-            <div id="mamp"><h3>Screenshot 1: MAMP Installed</h3>
-            <img class="full" src="images/mamptest.png" alt="MAMP screenshot">
+            <div class="screenshot">
+                <h3>Screenshot 1: MAMP Installed</h3>
+                <img class="full" src="images/mamptest.png" alt="MAMP screenshot">
             </div>
-            <div>
-            <h3>Screenshot 2: PHP Errors Working</h3>
-            <img class="full" src="images/errortest.png" alt="PHP error screenshot">
+            <div class="screenshot">
+                <h3>Screenshot 2: PHP Errors Working</h3>
+                <img class="full" src="images/errortest.png" alt="PHP error screenshot">
             </div>
+            <div class="screenshot">
+                <h3>Screenshot 3: Adminer Database</h3>
+                <a href="website/images/database.png"><img src="website/images/database.png" alt="database of twin peaks characters"></a>
+            </div>
+        </div>
+</main>
         </div>
     </div>
     <!-- close wrapper -->
