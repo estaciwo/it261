@@ -7,13 +7,12 @@
 }
 
 body {
-    background:beige;
+    background:#262318;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .current {
     color: red;
-    font-weight: bold;
 }
 
 header {
@@ -47,10 +46,6 @@ nav a {
     text-decoration:none;
 }
 
-nav a:hover {
-    font-weight: bold;
-}
-
 #wrapper {
     max-width:1200px;
     margin:20px auto;
@@ -64,21 +59,25 @@ nav a:hover {
 }
 
 main {
-    width:62%;
-    background:lightblue;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    padding: 15px;
     float:left;
+    width:62%;
 }
 
-main.junk {
-    background: white;
-    border: 5px solid green;
-    color: green;
-    padding: 5px;
-}
-
-form {
-    background:#efefef;
+div.intros {
+    color: white;
+    background:#6b2f32;
+    border: 3px solid #c7bb54;
+    line-height: 15px;
     padding: 20px;
+    font-family: serif;
+}
+
+div.entry {
+    padding: 15px;
 }
 
 fieldset {
@@ -89,8 +88,20 @@ label {
     line-height: 30px;
 }
 
+ul {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+div.intros ul {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 li {
     list-style-type: none;
+    font-size: 18px;
+    line-height:1.5;
 }
 
 .error {
@@ -100,20 +111,12 @@ li {
 
 aside {
     width:35%;
-    background:lightsalmon;
+    background:#7d8a80;
     float:right;
     padding: 10px;
-}
-
-aside img {
-    min-width: 350px;
-}
-
-aside.junk {
-    background-color: white;
-    border: 5px solid green;
-    padding: 5px;
-    text-align: center;
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-bottom: 50px;
 }
 
 footer {
@@ -138,36 +141,24 @@ img {
     max-width:100%;
 }
 
-aside img {
-    max-width: 250px;
-}
-
 /* typography */
 
 p {
     margin-bottom:20px;
-    line-height:1.4;
+    line-height:1.5;
+    font-size: 18px;
 }
 
 h1 {
     font-size:2.5em;
-}
-
-h1.junk {
-    color: black;
-}
-
-h1.food {
-    margin: auto;
-    color: red;
-    text-align: center;
+    color: #569653;
     font-family: sans-serif;
-    padding: 20px;
-    margin: 20px;
+    font-style: italic;
 }
 
 h2 {
     font-size:2em;
+    margin-top: 20px;
 }
 
 h3 {
@@ -176,34 +167,12 @@ h3 {
 
 h1, h2, h3 {
     margin-bottom:10px;
-    font-family:playfair or serif;
-}
-
-body.food {
-    background: #90e087;
-}
-
-table.food {
-    margin: auto;
-    border: 1px solid red;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-img.food {
-    max-width: 200px;
-}
-
-th.food {
-    font-style: italic;
-}
-
-th.food, td.food {
-    text-align: center;
-    border: 1px solid red;
-    padding: 10px;
 }
 
 legend {
     color:black;
+}
+
+main a {
+    color: #c7bb54;
 }
