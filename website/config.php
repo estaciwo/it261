@@ -2,6 +2,26 @@
 
 ob_start(); // removes header errors until all PHP is processed?
 
+// nov 27 addition
+define('DEBUG', 'TRUE');  // We want to see our errors
+
+include('credentials.php');
+
+ 
+function myError($myFile, $myLine, $errorMsg)
+{
+if(defined('DEBUG') && DEBUG)
+{
+ echo 'Error in file: <b> '.$myFile.' </b> on line: <b> '.$myLine.' </b>';
+      echo 'Error message: <b> '.$errorMsg.'</b>';
+      die();
+  }  else {
+      echo ' Houston, we have a problem!';
+      die();
+  }
+
+} // end nov 27 addition
+    
 define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
 
     $food['Huevos_Rancheros'] = 'huev Rural Mexico';
@@ -15,11 +35,13 @@ switch(THIS_PAGE) {
     case 'index.php' : 
         $title = 'Home page of our Website Project';
         $body = 'home';
+        $style = 'styles';
         break;
 
     case 'about.php' : 
         $title = 'About page of our Website Project';
         $body = 'about inner';
+        $style = 'styles';
         break;
 
     case 'daily.php' : 
@@ -30,30 +52,46 @@ switch(THIS_PAGE) {
         $mainMargin = '20px 0  40px 0';
         $main = '#f0f0f0';
         $body = '#f0f0f0';
+        $style = 'styles';
         break;
 
     case 'project.php' : 
         $title = 'Project page of our Website Project';
         $body = 'project inner';
+        $style = 'styles';
         break;
 
     case 'contact.php' : 
         $title = 'Contact page of our Website Project';
         $body = 'contact inner';
+        $style = 'styles';
         break;
 
     case 'gallery.php' : 
         $title = 'Gallery page of our Website Project';
         $body = 'gallery inner';
+        $style = 'styles';
         break;
 
     case 'thx.php' : 
         $title = 'Thank You! | Seattle Utilities';
         $body = 'thx';
+        $style = 'styles';
         break;
 
     case 'gallery.php' :
         $body = 'food';
+        $style = 'styles';
+        break;
+    
+    case 'characters.php' :
+        $title = 'Characters of Twin Peaks';
+        $style = 'characters';
+        break;
+        
+    case 'character-bio.php' :
+        $title = 'More about Twin Peaks';
+        $style = 'characters';
         break;
 }
 
@@ -62,7 +100,7 @@ $nav = array(
     'index.php' => 'Home',
     'about.php' => 'About',
     'daily.php' => 'Daily',
-    'project.php' => 'Project',
+    'characters.php' => 'Project',
     'contact.php' => 'Contact',
     'gallery.php' => 'Gallery',
 );
@@ -71,9 +109,9 @@ function make_links($nav) {
     $my_return = '';
     foreach($nav as $key => $value) {
         if(THIS_PAGE == $key) {
-            $my_return .= '<li><a style="color:red;" href="'.$key.'">'.$value.'</a></li>';
+            $my_return .= '<li><a style="color:pink; font-weight:bold;" href="'.$key.'">'.$value.'</a></li>';
         } else {
-            $my_return .= '<li><a style="color:green" href="'.$key.'">'.$value.'</a></li>';
+            $my_return .= '<li><a style="color:#99f1ff;" href="'.$key.'">'.$value.'</a></li>';
         }
     } //end foreach
     return $my_return;
