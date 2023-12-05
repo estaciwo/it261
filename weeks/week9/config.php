@@ -7,6 +7,8 @@ include('credentials.php');
 
 $errors = array();
 
+$success = 'You have successfully logged on!';
+
 function myError($myFile, $myLine, $errorMsg) 
 {
 if(defined('DEBUG') && DEBUG) 

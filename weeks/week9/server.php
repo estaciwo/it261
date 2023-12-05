@@ -8,7 +8,7 @@ session_start();
 
 include('config.php');
 // we will eventually have a header include
-// include('./includes/header.php');
+// hiding for now include('includes/header.php'); 
 
 $iConn = mysqli_connect(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME) or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
 
@@ -114,7 +114,7 @@ if(isset($_POST['login_user'])) {
 
     // we are counting our errors, and if we have no errors - we will continue the same way
 
-    if(count($errors)) == 0 {
+    if(count($errors) == 0)  {
         $password = md5($password);
 
         // we are going to query our users table to make sure that our username AND password match
@@ -132,7 +132,7 @@ if(isset($_POST['login_user'])) {
             header('Location:index.php');
 
         } else {
-            array_push($error, 'Wrong username/password combo!!!');
+            array_push($errors, 'Wrong username/password combo!!!');
         }
 
     } // end count errors
